@@ -37,7 +37,7 @@ CREATE TABLE employees (
 	emp_name VARCHAR(25),
 	position VARCHAR(15),
 	salary INT,
-	branch_id VARCHAR(25) -- FK
+	branch_id VARCHAR(25)
 );
 
 -- Create table 'books'
@@ -65,11 +65,11 @@ CREATE TABLE members(
 DROP TABLE IF EXISTS issued_status;
 CREATE TABLE issued_status (
 	issued_id VARCHAR(10) PRIMARY KEY,
-	issued_member_id VARCHAR(10), -- FK
+	issued_member_id VARCHAR(10),
 	issued_book_name VARCHAR(75),
 	issued_date DATE,
-	issued_book_isbn VARCHAR(25), -- FK
-	issued_emp_id VARCHAR(10) -- FK
+	issued_book_isbn VARCHAR(25), 
+	issued_emp_id VARCHAR(10)
 );
 
 -- Create table 'return_status'
